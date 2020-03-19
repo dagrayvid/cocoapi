@@ -112,7 +112,7 @@ cpp_evaluate(int useCats,
         auto gtsm = &gts_map[key(imgId,catId)];
         auto dtsm = &dts_map[key(imgId,catId)];
 
-        if((gtsm->id.size()==0) && (dtsm->id.size()==0)) {
+        if((gtsm->id.size()==0) || (dtsm->id.size()==0)) {
           continue;
         }
     
